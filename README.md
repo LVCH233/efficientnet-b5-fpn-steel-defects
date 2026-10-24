@@ -2,7 +2,7 @@
 
 钢板表面缺陷分割归档，仅提供 EfficientNet-B5 + FPN 方案。正式模型选自第135轮；历史训练至200轮。代码保留固定历史版 FPN，不能用新版 segmentation-models-pytorch 替换。
 
-本地整理副本不含模型或比赛图片。GitHub 发布及附件恢复验收由交付记录确认；未发布前没有可用下载链接。原工程保持完整，本项目不执行本地删除。
+本仓库不含比赛图片，正式模型作为Release附件保存。归档恢复验收见交付记录；原工程本次未删除。
 
 ## 安装
 
@@ -26,7 +26,7 @@ CUDA 12.1 示例：先以 `--index-url https://download.pytorch.org/whl/cu121` �
 7e97d666c9164f4c34dfb8ef88cbc120df5862b5d7dab5fd20e510fce230ce56
 ```
 
-模型须从本仓库正式Release取得（发布后补真实链接）。入口默认核验此哈希。原始checkpoint包含模型、optimizer、scheduler、scaler、RNG和身份信息，因此只加载可信来源；不将350MB模型提交普通Git。
+从 [正式Release](https://github.com/LVCH233/efficientnet-b5-fpn-steel-defects/releases/tag/v1.0.0-epoch135) 下载 [best_epoch135.pt](https://github.com/LVCH233/efficientnet-b5-fpn-steel-defects/releases/download/v1.0.0-epoch135/best_epoch135.pt) 和 [SHA256SUMS.txt](https://github.com/LVCH233/efficientnet-b5-fpn-steel-defects/releases/download/v1.0.0-epoch135/SHA256SUMS.txt)。私有仓库需要先登录有访问权限的GitHub账户。入口默认核验此哈希。原始checkpoint包含模型、optimizer、scheduler、scaler、RNG和身份信息，因此只加载可信来源；不将350MB模型提交普通Git。
 
 数据从 [Kaggle Severstal](https://www.kaggle.com/competitions/severstal-steel-defect-detection/data) 按比赛条款自行取得。内部test来自原有标注训练集，不是Kaggle无标签test_images。保留 `data/splits/{train,val,test}.csv` 的8797/1885/1886张清单，不重新随机切分。外部数据可按以下方式生成按位压缩PNG掩码：
 
