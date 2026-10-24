@@ -49,7 +49,7 @@
   {
     "target": "docs/REPRODUCTION.md",
     "mode": "new archive file",
-    "export_sha256": "d714284f29b75a590eec8a90e3c3b3e93e3530ada96e725e198830c098956a01"
+    "export_sha256": "13fa4606c9ef4c65f203a60e0c1ec8b74c6616a735d2db3f07d21915e33e0d2f"
   },
   {
     "source": "视觉作业-吕出豪部分/audit_data.py",
@@ -650,5 +650,10 @@
     "target": "THIRD_PARTY_NOTICES.md",
     "mode": "new archive file",
     "export_sha256": "3b6bd44f7a30efca0f74b071f369c2fce8908e4cc89aad31223ade0f3b1f9a53"
+  },
+  {
+    "target": ".gitattributes",
+    "mode": "new archive file",
+    "export_sha256": "0ece429305d1d38c3f51fef301ff4c3f5d815fb30a1da3fc2d098bd971fb9b84"
   }
 ]
