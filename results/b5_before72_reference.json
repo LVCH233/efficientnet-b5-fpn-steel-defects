@@ -1,0 +1,19 @@
+{
+  "name": "FPN / EfficientNet-B5",
+  "epoch": 72,
+  "checkpoint": "D:\\Study\\VDCP\\outputs\\b5_local_crop\\crop416\\best_region_f2.pt",
+  "checkpoint_sha256": "2911fb7f28795ef597f4eed75c2df7d319b8e65a03e6c410760e17b29dcdbc89",
+  "thresholds": [
+    0.75,
+    0.65,
+    0.65,
+    0.85
+  ],
+  "min_areas": [
+    256,
+    1024,
+    256,
+    1024
+  ],
+  "raw_cache_key": "b5_135"
+}

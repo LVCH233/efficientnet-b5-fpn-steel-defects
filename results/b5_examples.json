@@ -1,0 +1,38 @@
+[
+  {
+    "file": "b5_1_正确识别.png",
+    "label": "正确识别",
+    "image_id": "e0eefb4a2.jpg",
+    "n_gt": 2,
+    "found": 2,
+    "fp": 0,
+    "correct": 2
+  },
+  {
+    "file": "b5_2_正确识别.png",
+    "label": "正确识别",
+    "image_id": "2cfa58247.jpg",
+    "n_gt": 4,
+    "found": 4,
+    "fp": 0,
+    "correct": 4
+  },
+  {
+    "file": "b5_3_漏检.png",
+    "label": "漏检",
+    "image_id": "b3b8f0c9e.jpg",
+    "n_gt": 2,
+    "found": 1,
+    "fp": 1,
+    "correct": 1
+  },
+  {
+    "file": "b5_4_误报.png",
+    "label": "误报",
+    "image_id": "5d046cb01.jpg",
+    "n_gt": 0,
+    "found": 0,
+    "fp": 10,
+    "correct": 0
+  }
+]

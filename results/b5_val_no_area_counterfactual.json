@@ -1,0 +1,11 @@
+{
+  "n_images": 1885,
+  "n_gt": 3029,
+  "found": 2553,
+  "correct": 2526,
+  "fp": 778,
+  "n_identified": 3331,
+  "detect_rate": 0.8428524265434136,
+  "false_rate": 0.2568504456916474,
+  "accuracy": 0.7583308315821075
+}

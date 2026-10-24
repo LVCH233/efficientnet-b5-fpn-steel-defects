@@ -1,0 +1,290 @@
+{
+  "status": "complete",
+  "canonical_precision": "fp32_direct",
+  "test_accessed": false,
+  "observed_at": "2026-10-17T10:40:33.229573+09:00",
+  "parent_sha256": "5b9f07774bbf464d872e6edf15ed2a07d238bc2a43ef1e581dfd8a7eb00860cb",
+  "reference_protocol_sha256": "ba265b3e5c2188ef5e70d2c60f0a89adb61bbae632de32583c8eb4bf90a8ed35",
+  "base_experiment": {
+    "config": "0a8ffab270fb31431194c4cd2d9f4f2781a5f6812f896edea6863dc3f3be4342",
+    "splits": {
+      "train": "3598be5908211a4d0f0943e624379a813831f7b19f07e9342c1dcdf49e383238",
+      "val": "c60b61507b926213fdbc0692817f10951e441784cbda8f02d3a38bfd331b8123"
+    },
+    "source": "73cad53ba189a4df70950f29920897b287c0762c8b5cb4d134adcddd8e2bee66",
+    "weights": "b641769706a245cea68d309c3d35a864b6317e686e315fe79ed3d81e78c6f51c",
+    "selected_data": "199a5b14c52146ec3309831f2629131109d057ef8f49160860337182d1cbbacb",
+    "reference_protocol": "ba265b3e5c2188ef5e70d2c60f0a89adb61bbae632de32583c8eb4bf90a8ed35",
+    "internal_test_csv": "870d1ed2ecc73bb0ac04ec790427ff11b093fc8c16aaddf0fb45b1cf4cf27684"
+  },
+  "environment": {
+    "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "cudnn": 90100,
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "scipy": "1.15.3",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "tf32_matmul": false,
+    "tf32_cudnn": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false
+  },
+  "restore_audit": {
+    "epoch": 72,
+    "pending_validation": false,
+    "scheduler_last_epoch": 72,
+    "optimizer_state_count": 532,
+    "optimizer_group_sizes": [
+      501,
+      31
+    ],
+    "optimizer_lr": [
+      6.698118535395015e-05,
+      0.002870622229455007
+    ],
+    "scaler": {
+      "scale": 2147483648.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000,
+      "_growth_tracker": 324
+    },
+    "saved_cuda_rng_devices": 2,
+    "checkpoint_bytes": 350873445
+  },
+  "fp32_direct": {
+    "n_gt": 3029,
+    "n_pred": 2836,
+    "tp": 1768,
+    "fp": 1068,
+    "fn": 1261,
+    "correct_class": 1754,
+    "recall": 0.5836909871244635,
+    "false_alarm_rate": 0.3525916143941895,
+    "classification_accuracy": 0.6184767277856136,
+    "by_class": [
+      {
+        "class_id": 1,
+        "n_gt": 476,
+        "n_pred": 396,
+        "tp": 230,
+        "fp": 169,
+        "fn": 246,
+        "correct_class": 224,
+        "recall": 0.4831932773109244,
+        "false_alarm_rate": 0.3550420168067227,
+        "classification_accuracy": 0.5656565656565656
+      },
+      {
+        "class_id": 2,
+        "n_gt": 45,
+        "n_pred": 45,
+        "tp": 23,
+        "fp": 22,
+        "fn": 22,
+        "correct_class": 23,
+        "recall": 0.5111111111111111,
+        "false_alarm_rate": 0.4888888888888889,
+        "classification_accuracy": 0.5111111111111111
+      },
+      {
+        "class_id": 3,
+        "n_gt": 2216,
+        "n_pred": 2152,
+        "tp": 1349,
+        "fp": 796,
+        "fn": 867,
+        "correct_class": 1346,
+        "recall": 0.608754512635379,
+        "false_alarm_rate": 0.3592057761732852,
+        "classification_accuracy": 0.6254646840148699
+      },
+      {
+        "class_id": 4,
+        "n_gt": 292,
+        "n_pred": 243,
+        "tp": 166,
+        "fp": 81,
+        "fn": 126,
+        "correct_class": 161,
+        "recall": 0.5684931506849316,
+        "false_alarm_rate": 0.2773972602739726,
+        "classification_accuracy": 0.6625514403292181
+      }
+    ],
+    "images": 1885,
+    "region_f2": 0.5912252541466024,
+    "inference_precision_policy": "fp32_direct",
+    "reference_protocol_sha256": "ba265b3e5c2188ef5e70d2c60f0a89adb61bbae632de32583c8eb4bf90a8ed35",
+    "seconds": 359.01600000000326,
+    "kaggle_style_mean_dice_at_05": 0.9372239714013022
+  },
+  "fp16_cached": {
+    "n_gt": 3029,
+    "n_pred": 2836,
+    "tp": 1768,
+    "fp": 1068,
+    "fn": 1261,
+    "correct_class": 1754,
+    "recall": 0.5836909871244635,
+    "false_alarm_rate": 0.3525916143941895,
+    "classification_accuracy": 0.6184767277856136,
+    "by_class": [
+      {
+        "class_id": 1,
+        "n_gt": 476,
+        "n_pred": 396,
+        "tp": 230,
+        "fp": 169,
+        "fn": 246,
+        "correct_class": 224,
+        "recall": 0.4831932773109244,
+        "false_alarm_rate": 0.3550420168067227,
+        "classification_accuracy": 0.5656565656565656
+      },
+      {
+        "class_id": 2,
+        "n_gt": 45,
+        "n_pred": 45,
+        "tp": 23,
+        "fp": 22,
+        "fn": 22,
+        "correct_class": 23,
+        "recall": 0.5111111111111111,
+        "false_alarm_rate": 0.4888888888888889,
+        "classification_accuracy": 0.5111111111111111
+      },
+      {
+        "class_id": 3,
+        "n_gt": 2216,
+        "n_pred": 2152,
+        "tp": 1349,
+        "fp": 796,
+        "fn": 867,
+        "correct_class": 1346,
+        "recall": 0.608754512635379,
+        "false_alarm_rate": 0.3592057761732852,
+        "classification_accuracy": 0.6254646840148699
+      },
+      {
+        "class_id": 4,
+        "n_gt": 292,
+        "n_pred": 243,
+        "tp": 166,
+        "fp": 81,
+        "fn": 126,
+        "correct_class": 161,
+        "recall": 0.5684931506849316,
+        "false_alarm_rate": 0.2773972602739726,
+        "classification_accuracy": 0.6625514403292181
+      }
+    ],
+    "images": 1885,
+    "region_f2": 0.5912252541466024,
+    "inference_precision_policy": "fp16_quantized_from_same_fp32_forward",
+    "reference_protocol_sha256": "ba265b3e5c2188ef5e70d2c60f0a89adb61bbae632de32583c8eb4bf90a8ed35",
+    "seconds": 359.03100000001723,
+    "kaggle_style_mean_dice_at_05": 0.9372244367620226
+  },
+  "cloud_saved": {
+    "n_gt": 3029,
+    "n_pred": 2835,
+    "tp": 1767,
+    "fp": 1068,
+    "fn": 1262,
+    "correct_class": 1753,
+    "recall": 0.5833608451634202,
+    "false_alarm_rate": 0.3525916143941895,
+    "classification_accuracy": 0.618342151675485,
+    "by_class": [
+      {
+        "class_id": 1,
+        "n_gt": 476,
+        "n_pred": 396,
+        "tp": 229,
+        "fp": 170,
+        "fn": 247,
+        "correct_class": 223,
+        "recall": 0.4810924369747899,
+        "false_alarm_rate": 0.35714285714285715,
+        "classification_accuracy": 0.5631313131313131
+      },
+      {
+        "class_id": 2,
+        "n_gt": 45,
+        "n_pred": 45,
+        "tp": 23,
+        "fp": 22,
+        "fn": 22,
+        "correct_class": 23,
+        "recall": 0.5111111111111111,
+        "false_alarm_rate": 0.4888888888888889,
+        "classification_accuracy": 0.5111111111111111
+      },
+      {
+        "class_id": 3,
+        "n_gt": 2216,
+        "n_pred": 2151,
+        "tp": 1349,
+        "fp": 795,
+        "fn": 867,
+        "correct_class": 1346,
+        "recall": 0.608754512635379,
+        "false_alarm_rate": 0.35875451263537905,
+        "classification_accuracy": 0.6257554625755463
+      },
+      {
+        "class_id": 4,
+        "n_gt": 292,
+        "n_pred": 243,
+        "tp": 166,
+        "fp": 81,
+        "fn": 126,
+        "correct_class": 161,
+        "recall": 0.5684931506849316,
+        "false_alarm_rate": 0.2773972602739726,
+        "classification_accuracy": 0.6625514403292181
+      }
+    ],
+    "region_f2": 0.5909303725503311,
+    "images": 1885,
+    "kaggle_style_mean_dice_at_05": 0.9372237816846549,
+    "seconds": 495.76331270899936,
+    "reference_protocol_sha256": "ba265b3e5c2188ef5e70d2c60f0a89adb61bbae632de32583c8eb4bf90a8ed35",
+    "fp32_retry_count": 0,
+    "fp32_retry_images": [],
+    "inference_precision_policy": "full_model_fp32_with_preserved_grad_scaler"
+  },
+  "cloud_to_local_fp32_delta": {
+    "n_gt": 0,
+    "n_pred": 1,
+    "tp": 1,
+    "fp": 0,
+    "fn": -1,
+    "correct_class": 1
+  },
+  "cloud_to_local_fp16_delta": {
+    "n_gt": 0,
+    "n_pred": 1,
+    "tp": 1,
+    "fp": 0,
+    "fn": -1,
+    "correct_class": 1
+  },
+  "local_fp32_to_fp16_delta": {
+    "n_gt": 0,
+    "n_pred": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "correct_class": 0
+  },
+  "changed_threshold_images": 475,
+  "changed_region_count_images": 0,
+  "existing_local_postprocess_policy": "vdcp.evaluate.postprocess_masks unconditionally quantizes to float16 before thresholding; trainer.validate therefore is not direct FP32 postprocessing",
+  "interpretation": "Same-forward quantization isolated exactly. Cloud residual is compared with local FP16 postprocessing separately; causal attribution is unresolved because cloud per-pixel probabilities are unavailable.",
+  "protocol": "FP32 model and sigmoid; direct FP32 probabilities; locked thresholds/areas; full 256x1600; no threshold fitting",
+  "audit_script_sha256": "c118a98f0d82fa3497e8561792ea9dd99bc8de1826717c1808ac2b35842747c7"
+}

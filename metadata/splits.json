@@ -1,0 +1,14 @@
+{
+  "train": {
+    "images": 8797,
+    "sha256": "3598be5908211a4d0f0943e624379a813831f7b19f07e9342c1dcdf49e383238"
+  },
+  "val": {
+    "images": 1885,
+    "sha256": "c60b61507b926213fdbc0692817f10951e441784cbda8f02d3a38bfd331b8123"
+  },
+  "test": {
+    "images": 1886,
+    "sha256": "870d1ed2ecc73bb0ac04ec790427ff11b093fc8c16aaddf0fb45b1cf4cf27684"
+  }
+}

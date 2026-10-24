@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "efficientnet-b5-historical-fpn"
+version = "1.0.0"
+description = "Pinned B5-FPN steel surface defect segmentation archive"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5,<2.6", "numpy==1.26.4", "opencv-python-headless==4.10.0.84", "scipy==1.15.3", "iterative-stratification==0.1.9", "Pillow==12.3.0", "scikit-learn==1.6.1"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+vdcp = ["_reference/*.py", "vendor/kh_fpn/LICENSE", "vendor/kh_fpn/upstream_manifest.json"]

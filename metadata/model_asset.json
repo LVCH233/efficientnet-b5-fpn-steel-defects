@@ -1,0 +1,18 @@
+{
+  "file": "best_epoch135.pt",
+  "bytes": 350865452,
+  "sha256": "7e97d666c9164f4c34dfb8ef88cbc120df5862b5d7dab5fd20e510fce230ce56",
+  "epoch": 135,
+  "storage": "GitHub Release attachment; not ordinary Git",
+  "release_status": "not yet published at export",
+  "checkpoint_has": [
+    "model",
+    "optimizer",
+    "scheduler",
+    "scaler",
+    "rng",
+    "epoch",
+    "identity"
+  ],
+  "epoch200_local_export": "model only; not full resumption state"
+}

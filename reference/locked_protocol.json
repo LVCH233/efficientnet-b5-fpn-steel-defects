@@ -1,0 +1,104 @@
+{
+  "locked": true,
+  "checkpoint_sha256": "320cb7544685181d7cf02049bca4333c458bb6691dc442f8a2f817c117cab82a",
+  "validation_csv_sha256": "c60b61507b926213fdbc0692817f10951e441784cbda8f02d3a38bfd331b8123",
+  "thresholds": [
+    0.75,
+    0.65,
+    0.65,
+    0.85
+  ],
+  "min_areas": [
+    256,
+    1024,
+    256,
+    1024
+  ],
+  "region_iou_threshold": 0.5,
+  "connectivity": 8,
+  "gt_min_area": 1,
+  "probability_dtype": "float16",
+  "selection_method": "Classwise same-class region F2; prefer feasible proxy targets; global metrics scored separately",
+  "calibration_split": "val",
+  "selected_classwise_proxy_results": [
+    {
+      "class_id": 1,
+      "threshold": 0.75,
+      "min_area": 256,
+      "n_gt": 476,
+      "n_pred": 529,
+      "tp": 242,
+      "fp": 287,
+      "fn": 234,
+      "recall": 0.5084033613445378,
+      "false_alarm_rate": 0.6029411764705882,
+      "classwise_precision": 0.45746691871455575,
+      "f2": 0.4973284011508426,
+      "meets_proxy_targets": false
+    },
+    {
+      "class_id": 2,
+      "threshold": 0.65,
+      "min_area": 1024,
+      "n_gt": 45,
+      "n_pred": 54,
+      "tp": 26,
+      "fp": 28,
+      "fn": 19,
+      "recall": 0.5777777777777777,
+      "false_alarm_rate": 0.6222222222222222,
+      "classwise_precision": 0.48148148148148145,
+      "f2": 0.5555555555555556,
+      "meets_proxy_targets": false
+    },
+    {
+      "class_id": 3,
+      "threshold": 0.65,
+      "min_area": 256,
+      "n_gt": 2216,
+      "n_pred": 2518,
+      "tp": 1416,
+      "fp": 1102,
+      "fn": 800,
+      "recall": 0.6389891696750902,
+      "false_alarm_rate": 0.4972924187725632,
+      "classwise_precision": 0.562351072279587,
+      "f2": 0.6220347917764892,
+      "meets_proxy_targets": false
+    },
+    {
+      "class_id": 4,
+      "threshold": 0.85,
+      "min_area": 1024,
+      "n_gt": 292,
+      "n_pred": 278,
+      "tp": 152,
+      "fp": 126,
+      "fn": 140,
+      "recall": 0.5205479452054794,
+      "false_alarm_rate": 0.4315068493150685,
+      "classwise_precision": 0.5467625899280576,
+      "f2": 0.5255878284923928,
+      "meets_proxy_targets": false
+    }
+  ],
+  "threshold_grid": [
+    0.15,
+    0.25,
+    0.35,
+    0.45,
+    0.55,
+    0.65,
+    0.75,
+    0.85,
+    0.95
+  ],
+  "min_area_grid": [
+    1,
+    16,
+    64,
+    256,
+    1024,
+    4096
+  ]
+}

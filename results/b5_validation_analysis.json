@@ -1,0 +1,55 @@
+{
+  "classes": {
+    "1": {
+      "gt": 476,
+      "detected": 343,
+      "missed": 133,
+      "fp": 41
+    },
+    "2": {
+      "gt": 45,
+      "detected": 36,
+      "missed": 9,
+      "fp": 4
+    },
+    "3": {
+      "gt": 2216,
+      "detected": 1889,
+      "missed": 327,
+      "fp": 427
+    },
+    "4": {
+      "gt": 292,
+      "detected": 239,
+      "missed": 53,
+      "fp": 39
+    }
+  },
+  "size_bins": {
+    "<256": {
+      "gt": 119,
+      "detected": 57
+    },
+    "256–1023": {
+      "gt": 510,
+      "detected": 325
+    },
+    "1024–4095": {
+      "gt": 1038,
+      "detected": 861
+    },
+    "≥4096": {
+      "gt": 1362,
+      "detected": 1264
+    }
+  },
+  "negative_images": 885,
+  "positive_images": 1000,
+  "negative_fp": 63,
+  "negative_images_with_fp": 37,
+  "positive_fp": 448,
+  "positive_images_with_fp": 302,
+  "miss_zero_overlap": 438,
+  "miss_partial_coverage": 84,
+  "misclassified_detected": 26
+}

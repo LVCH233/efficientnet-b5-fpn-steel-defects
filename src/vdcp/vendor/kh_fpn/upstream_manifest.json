@@ -1,0 +1,48 @@
+{
+  "repository": "https://github.com/khornlund/segmentation-models-pytorch",
+  "commit": "df7d87f39adffa4b7264d88bd224596af45dc4c1",
+  "files": {
+    "encoders/efficientnet.py": {
+      "upstream_sha256": "3e2cf0f210ecb90f808a410f3146a9ae686d258b084d6c47c5f61b5ae2b89d18",
+      "patched_sha256": "01f05aa3c263390c70c54368a7ddc5dcc6bc25cd9fd58bc6a6b18875085012ba",
+      "patches": [
+        "import namespace; np.float -> float"
+      ]
+    },
+    "fpn/decoder.py": {
+      "upstream_sha256": "a39c6af2e55531e2ae123dd654db4d7442762d1d4aab9cfee1b00d8f45d359bd",
+      "patched_sha256": "a39c6af2e55531e2ae123dd654db4d7442762d1d4aab9cfee1b00d8f45d359bd",
+      "patches": [
+        "none"
+      ]
+    },
+    "common/weights.py": {
+      "upstream_sha256": "c14a737f9aad8ce39ee2d672d056b22c55f21e621baa80f5a8f7f2316fc050ac",
+      "patched_sha256": "c14a737f9aad8ce39ee2d672d056b22c55f21e621baa80f5a8f7f2316fc050ac",
+      "patches": [
+        "none"
+      ]
+    },
+    "common/activations.py": {
+      "upstream_sha256": "30aba7620dde2cfa377217a51ba4063a7e4da7c4a7658c16369e8111ba40e8fb",
+      "patched_sha256": "30aba7620dde2cfa377217a51ba4063a7e4da7c4a7658c16369e8111ba40e8fb",
+      "patches": [
+        "none"
+      ]
+    },
+    "common/blocks.py": {
+      "upstream_sha256": "fdfe19d92fc9c516d3898ec43a5bb5049313d7d69ae25110cc5af398d12cf256",
+      "patched_sha256": "fdfe19d92fc9c516d3898ec43a5bb5049313d7d69ae25110cc5af398d12cf256",
+      "patches": [
+        "none"
+      ]
+    },
+    "base/model.py": {
+      "upstream_sha256": "52bc1a1404ee329b2d0eaae505c553150fe1f1eaa64c38baa3893abbd135ccf9",
+      "patched_sha256": "52bc1a1404ee329b2d0eaae505c553150fe1f1eaa64c38baa3893abbd135ccf9",
+      "patches": [
+        "none"
+      ]
+    }
+  }
+}

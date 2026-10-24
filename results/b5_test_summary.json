@@ -1,0 +1,15 @@
+{
+  "n_images": 1886,
+  "n_gt": 2932,
+  "found": 2456,
+  "fp": 462,
+  "correct": 2421,
+  "n_identified": 2918,
+  "detect_rate": 0.8376534788540245,
+  "false_rate": 0.15757162346521145,
+  "accuracy": 0.8296778615490061,
+  "checkpoint_sha256": "7e97d666c9164f4c34dfb8ef88cbc120df5862b5d7dab5fd20e510fce230ce56",
+  "evaluator_sha256": "784722c2d57667a681e61b5637bbe68acd3532ca8bc158a924e2b58eb9f70189",
+  "elapsed_seconds": 714.0469999999914,
+  "inference_device": "cuda"
+}

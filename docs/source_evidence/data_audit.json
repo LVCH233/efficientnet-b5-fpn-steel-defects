@@ -1,0 +1,515 @@
+{
+  "generated_utc": "2026-10-19T08:00:39.550059+00:00",
+  "scope": "Read masks and manifests only; no predictions/inference/tuning or original-file writes",
+  "gt_definition": "evaluate_v2._gt_labels: independent per-class 8-connected components, no GT size filtering",
+  "small_area_definition": "strict area < threshold in original 1600x256 pixels; cumulative thresholds, not disjoint bins",
+  "seed": 20261008,
+  "second_split_seed": 20261009,
+  "split_method": "SHA256 groups; iterative multi-label shuffle split 70%/30%, then 50%/50% of held groups",
+  "manifest_images": 12568,
+  "manifest_unique_ids": 12568,
+  "split_unique_ids": {
+    "train": 8797,
+    "val": 1885,
+    "test": 1886
+  },
+  "pairwise_image_id_intersection": {
+    "train/val": 0,
+    "train/test": 0,
+    "val/test": 0
+  },
+  "split_union_equals_manifest": true,
+  "duplicate_sha256_groups": 0,
+  "duplicate_extra_images": 0,
+  "sha256_groups_crossing_splits": 0,
+  "duplicate_check_boundary": "Manifest-declared SHA256 hashes; JPEG contents were not re-read/rehashed in this audit",
+  "split_reproduction_matches_original_seed": true,
+  "splits": {
+    "train": {
+      "images": 8797,
+      "proportion": 0.6999522597071929,
+      "positive_images": 4670,
+      "negative_images": 4127,
+      "class_image_counts": [
+        628,
+        173,
+        3605,
+        561
+      ],
+      "gt_components": 13997,
+      "gt_components_per_class": [
+        2168,
+        227,
+        10269,
+        1333
+      ],
+      "foreground_pixels_per_class": [
+        2769397,
+        601845,
+        92936009,
+        19345641
+      ],
+      "small_gt_components": {
+        "16": {
+          "total": 26,
+          "per_class": [
+            0,
+            0,
+            20,
+            6
+          ]
+        },
+        "64": {
+          "total": 136,
+          "per_class": [
+            0,
+            0,
+            126,
+            10
+          ]
+        },
+        "100": {
+          "total": 248,
+          "per_class": [
+            0,
+            0,
+            234,
+            14
+          ]
+        },
+        "256": {
+          "total": 616,
+          "per_class": [
+            12,
+            0,
+            576,
+            28
+          ]
+        },
+        "1024": {
+          "total": 2929,
+          "per_class": [
+            1282,
+            28,
+            1500,
+            119
+          ]
+        }
+      },
+      "gt_component_count_image_histogram": {
+        "0": 4127,
+        "1": 1494,
+        "2": 1117,
+        "3": 706,
+        "4": 442,
+        "5": 289,
+        "6": 197,
+        "7": 154,
+        "8": 103,
+        "9": 56,
+        "10": 35,
+        "11": 29,
+        "12": 13,
+        "13": 11,
+        "14": 11,
+        "15": 2,
+        "16": 2,
+        "17": 4,
+        "18": 1,
+        "19": 1,
+        "20": 2,
+        "21": 1
+      },
+      "cross_class_overlap_images": 0,
+      "mask_class_presence_mismatch_ids": [],
+      "csv_identity": {
+        "path": "D:\\Study\\VDCP\\data\\splits\\train.csv",
+        "sha256": "3598be5908211a4d0f0943e624379a813831f7b19f07e9342c1dcdf49e383238",
+        "bytes": 906139,
+        "mtime_utc": "2026-10-08T13:37:24.375975+00:00"
+      },
+      "csv_sha256_matches_original_summary": true,
+      "class_image_counts_match_original_summary": true
+    },
+    "val": {
+      "images": 1885,
+      "proportion": 0.14998408656906428,
+      "negative_images": 885,
+      "positive_images": 1000,
+      "class_image_counts": [
+        134,
+        37,
+        772,
+        120
+      ],
+      "gt_components": 3029,
+      "gt_components_per_class": [
+        476,
+        45,
+        2216,
+        292
+      ],
+      "foreground_pixels_per_class": [
+        559269,
+        107848,
+        19332468,
+        4181094
+      ],
+      "small_gt_components": {
+        "16": {
+          "total": 12,
+          "per_class": [
+            0,
+            0,
+            9,
+            3
+          ]
+        },
+        "64": {
+          "total": 31,
+          "per_class": [
+            0,
+            0,
+            24,
+            7
+          ]
+        },
+        "100": {
+          "total": 48,
+          "per_class": [
+            0,
+            0,
+            40,
+            8
+          ]
+        },
+        "256": {
+          "total": 119,
+          "per_class": [
+            2,
+            1,
+            104,
+            12
+          ]
+        },
+        "1024": {
+          "total": 629,
+          "per_class": [
+            292,
+            6,
+            297,
+            34
+          ]
+        }
+      },
+      "gt_component_count_image_histogram": {
+        "0": 885,
+        "1": 302,
+        "2": 241,
+        "3": 159,
+        "4": 113,
+        "5": 52,
+        "6": 41,
+        "7": 30,
+        "8": 24,
+        "9": 14,
+        "10": 8,
+        "11": 5,
+        "12": 5,
+        "13": 2,
+        "14": 1,
+        "15": 2,
+        "17": 1
+      },
+      "cross_class_overlap_images": 0,
+      "mask_class_presence_mismatch_ids": [],
+      "csv_identity": {
+        "path": "D:\\Study\\VDCP\\data\\splits\\val.csv",
+        "sha256": "c60b61507b926213fdbc0692817f10951e441784cbda8f02d3a38bfd331b8123",
+        "bytes": 190433,
+        "mtime_utc": "2026-10-08T13:37:24.414498+00:00"
+      },
+      "csv_sha256_matches_original_summary": true,
+      "class_image_counts_match_original_summary": true
+    },
+    "test": {
+      "images": 1886,
+      "proportion": 0.15006365372374283,
+      "negative_images": 890,
+      "positive_images": 996,
+      "class_image_counts": [
+        135,
+        37,
+        773,
+        120
+      ],
+      "gt_components": 2932,
+      "gt_components_per_class": [
+        438,
+        49,
+        2163,
+        282
+      ],
+      "foreground_pixels_per_class": [
+        583463,
+        124778,
+        19038422,
+        4006837
+      ],
+      "small_gt_components": {
+        "16": {
+          "total": 6,
+          "per_class": [
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        "64": {
+          "total": 26,
+          "per_class": [
+            0,
+            0,
+            25,
+            1
+          ]
+        },
+        "100": {
+          "total": 40,
+          "per_class": [
+            1,
+            0,
+            38,
+            1
+          ]
+        },
+        "256": {
+          "total": 108,
+          "per_class": [
+            2,
+            0,
+            103,
+            3
+          ]
+        },
+        "1024": {
+          "total": 576,
+          "per_class": [
+            237,
+            5,
+            302,
+            32
+          ]
+        }
+      },
+      "gt_component_count_image_histogram": {
+        "0": 890,
+        "1": 321,
+        "2": 257,
+        "3": 142,
+        "4": 90,
+        "5": 65,
+        "6": 43,
+        "7": 23,
+        "8": 13,
+        "9": 19,
+        "10": 4,
+        "11": 5,
+        "12": 1,
+        "13": 6,
+        "14": 4,
+        "16": 1,
+        "17": 1,
+        "18": 1
+      },
+      "cross_class_overlap_images": 0,
+      "mask_class_presence_mismatch_ids": [],
+      "csv_identity": {
+        "path": "D:\\Study\\VDCP\\data\\splits\\test.csv",
+        "sha256": "870d1ed2ecc73bb0ac04ec790427ff11b093fc8c16aaddf0fb45b1cf4cf27684",
+        "bytes": 192420,
+        "mtime_utc": "2026-10-08T13:37:24.433215+00:00"
+      },
+      "csv_sha256_matches_original_summary": true,
+      "class_image_counts_match_original_summary": true
+    }
+  },
+  "totals": {
+    "images": 12568,
+    "gt_components": 19958,
+    "gt_components_per_class": [
+      3082,
+      321,
+      14648,
+      1907
+    ]
+  },
+  "historical_test_summary_files": [
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\segformer_balanced\\test\\summary.json",
+      "sha256": "c0185c697dfab33db363aeee953399df3036f087f02c06ddebfdd08ca6234cf2",
+      "bytes": 5188,
+      "mtime_utc": "2026-10-09T05:58:16.395175+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\segformer_baseline\\test\\summary.json",
+      "sha256": "700337e9bc3b40c81fa452cfb72ac47f09b5d0daeb7a02fb3bd4c6c3596f45ae",
+      "bytes": 5195,
+      "mtime_utc": "2026-10-09T05:47:20.026743+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\segformer_v2_control\\test\\summary.json",
+      "sha256": "70aa5f6836400981e2ffe440a24bcf1beadb801cb4cd51e8751b3142ae704bc9",
+      "bytes": 5191,
+      "mtime_utc": "2026-10-09T12:26:19.825600+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\segformer_v2_hard_negative\\test\\summary.json",
+      "sha256": "84ebad23fedcc9d95a64f2ac8b5d8967bf652aa86f1a1662f8859d4799140554",
+      "bytes": 5175,
+      "mtime_utc": "2026-10-09T12:39:35.883511+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\segformer_v2_weak_balance\\test\\summary.json",
+      "sha256": "d9e3cd6cf2731e8aef6f3f541492d54b938243b59c1a7368d4fb63f0f7d8f5f7",
+      "bytes": 5192,
+      "mtime_utc": "2026-10-09T12:49:50.574185+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\unet_baseline\\test\\summary.json",
+      "sha256": "4220cba0868c88a5f3089aa14b4fe295642a09e5cf67cbd301286a90b3ab0bd7",
+      "bytes": 5202,
+      "mtime_utc": "2026-10-09T05:36:19.915173+00:00",
+      "split": "test",
+      "images": 1886,
+      "n_gt": 2932,
+      "created_utc": null,
+      "calibration_split": "val"
+    }
+  ],
+  "evidence_file_identities": [
+    {
+      "path": "D:\\Study\\VDCP\\README.md",
+      "sha256": "a6388f2ca70539dbfdb4f3645fbb4a2e810f1642530c9b74122e43e65d25c00c",
+      "bytes": 17650,
+      "mtime_utc": "2026-10-09T13:03:55.661716+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\scripts\\prepare_data.py",
+      "sha256": "c78b4e34c49b8566008514239f06977d14debed7e1661cf0128b7da59d0f3177",
+      "bytes": 7012,
+      "mtime_utc": "2026-10-08T13:30:05.552569+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\src\\vdcp\\splits.py",
+      "sha256": "e95de120245c28181300cd8872152f22824e7896228fe8b0340c270718f59ed4",
+      "bytes": 1387,
+      "mtime_utc": "2026-10-08T13:33:16.776528+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\src\\vdcp\\selection.py",
+      "sha256": "9b408725755ab6463a4915ee492354d9b90240f26052181eaf4e3f9cf5e11b9c",
+      "bytes": 1457,
+      "mtime_utc": "2026-10-08T14:03:59.351237+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\data\\raw\\manifest.csv",
+      "sha256": "3c3c7bab7a158fae2907a0b668119bcb80b2bc9bc33fbae70c99a8b8f170779b",
+      "bytes": 1219138,
+      "mtime_utc": "2026-10-08T13:36:46.929056+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\data_audit.json",
+      "sha256": "bd22278d087a03c3b02699e46918d4d1c2828d9b114649008e89f502e56c5b27",
+      "bytes": 812,
+      "mtime_utc": "2026-10-08T13:36:48.222096+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\split_summary.json",
+      "sha256": "cfc86741c7e3ce6c7345c082f5ac145e7de825ebb14a627fa8cf99bd26666d3a",
+      "bytes": 834,
+      "mtime_utc": "2026-10-08T13:37:24.445197+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\selection.json",
+      "sha256": "47f20ae12cee44c7292f174700b10ea4456f1f280bcc0bc89d9f3ae43e4f5ab1",
+      "bytes": 1978,
+      "mtime_utc": "2026-10-09T05:25:11.503992+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\experiments\\baseline_selection.json",
+      "sha256": "816f6a48d3e69db97aeea70a487247f3f2371fe5c0ccc78416671dde583d2aec",
+      "bytes": 1456,
+      "mtime_utc": "2026-10-08T16:32:59.625010+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\improvements\\selection.json",
+      "sha256": "933598138617646dcedf1b19ddb416afac1bb86b50c738e001e4c887afdd6c88",
+      "bytes": 3179,
+      "mtime_utc": "2026-10-09T12:05:17.669722+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\improvements\\改进实验报告.md",
+      "sha256": "5398c2827175872e942077cbe05bffc4237ae837d53f546319fa016b75fb68f5",
+      "bytes": 6688,
+      "mtime_utc": "2026-10-09T12:50:12.320489+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\docs\\superpowers\\specs\\2026-10-09-targeted-improvement-design.md",
+      "sha256": "852fe8fc4dbbb54776362cbfca519dccabc5c0dab27e5d05d34835140867d9e4",
+      "bytes": 2827,
+      "mtime_utc": "2026-10-09T06:50:25.387636+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\reports\\v3\\provisional_selection.json",
+      "sha256": "20db4dd6166bbcdd1b9536ad5df67aadc1a86d061facc733c0b9b734d5441114",
+      "bytes": 1872,
+      "mtime_utc": "2026-10-09T21:45:42.591742+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\PROJECT_HANDOFF_2026-10-16.md",
+      "sha256": "6a2bb6dfe897fe19c593799bb93fec288ac9234b8bd0e1752c20f24059f96d5b",
+      "bytes": 34373,
+      "mtime_utc": "2026-10-17T00:43:36.905777+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\PROJECT_HANDOFF_2026-10-17_768_ONLY.md",
+      "sha256": "943fdb052b3a641300994eb68b6a5bbda966fad4c7b0c79610f95c1692516d00",
+      "bytes": 23740,
+      "mtime_utc": "2026-10-17T00:43:36.901772+00:00"
+    },
+    {
+      "path": "D:\\Study\\VDCP\\视觉作业-吕出豪部分\\evaluate_v2.py",
+      "sha256": "784722c2d57667a681e61b5637bbe68acd3532ca8bc158a924e2b58eb9f70189",
+      "bytes": 4493,
+      "mtime_utc": "2026-10-19T05:15:19.202526+00:00"
+    }
+  ],
+  "elapsed_seconds": 320.078
+}

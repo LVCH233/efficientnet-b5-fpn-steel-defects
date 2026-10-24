@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-24",
+  "python": "3.12.0",
+  "torch": "2.5.1+cu121",
+  "tests": {
+    "passed": 166,
+    "skipped": 1,
+    "seconds": 30.53,
+    "skip_reason": "Historical epoch72 complete checkpoint is external and not shipped in Git"
+  },
+  "compileall": "passed: src scripts",
+  "wheel": {
+    "built": true,
+    "installed_in_independent_target": true,
+    "imported_from_external_working_directory": true,
+    "isolated_python": true,
+    "pinned_group_evaluator_passed": true
+  },
+  "representative": {
+    "image_id": "0025bde0c.jpg",
+    "probability_shape": [
+      4,
+      256,
+      1600
+    ],
+    "dtype": "float32",
+    "mask_pixels": [
+      0,
+      0,
+      12805,
+      17791
+    ],
+    "different_pixels_vs_saved_reference": 0,
+    "n_gt": 8,
+    "detected": 3,
+    "false_alarms": 1,
+    "correct_class": 3
+  },
+  "full_validation": {
+    "record": "fresh_validation_20261024.json",
+    "images": 1885,
+    "n_gt": 3029,
+    "detected": 2507,
+    "false_alarms": 511,
+    "correct_class": 2481
+  },
+  "not_executed": [
+    "new-lineage full-model training",
+    "historical200-epoch retraining",
+    "Kaggle notebook execution"
+  ],
+  "scope": "No original files modified; no checkpoint copied into Git tree",
+  "independent_cpu_environment": {
+    "python": "3.12.0",
+    "torch": "2.5.1+cpu",
+    "tests": {
+      "passed": 163,
+      "skipped": 4,
+      "seconds": 28.66,
+      "skip_reasons": "One external epoch72 checkpoint integration plus three CUDA-only tests"
+    },
+    "representative": {
+      "shape": [
+        4,
+        256,
+        1600
+      ],
+      "dtype": "float32",
+      "different_mask_pixels_vs_cuda": 3,
+      "same_counts": {
+        "n_gt": 8,
+        "detected": 3,
+        "false_alarms": 1,
+        "correct_class": 3
+      }
+    },
+    "installation": "Fresh venv without original site-packages; editable install and requirements installed"
+  }
+}

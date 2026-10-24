@@ -1,0 +1,16 @@
+{
+  "n_gt": 3029,
+  "detected": 2507,
+  "false_alarms": 511,
+  "correct_class": 2481,
+  "recognized": 3018,
+  "recall": 0.8276658963354242,
+  "false_alarm_rate": 0.16870254209310004,
+  "classification_accuracy": 0.8220675944333996,
+  "n_images": 1885,
+  "diagnostic_subset": false,
+  "split_sha256": "c60b61507b926213fdbc0692817f10951e441784cbda8f02d3a38bfd331b8123",
+  "checkpoint_sha256": "7e97d666c9164f4c34dfb8ef88cbc120df5862b5d7dab5fd20e510fce230ce56",
+  "evaluator_sha256": "784722c2d57667a681e61b5637bbe68acd3532ca8bc158a924e2b58eb9f70189",
+  "seconds": 272.0
+}
